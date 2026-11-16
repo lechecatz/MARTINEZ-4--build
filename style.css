@@ -1,17 +1,40 @@
 /* CSS written by Julie Martinez */
 
 /* GLOBAL STYLES (MOBILE FIRST) */
+
 body {
   margin: 1rem;
   padding: 1rem;
-  border: 4px double #2f2c30;
-  background-color:#d4c3c3;
+  background-color:#685c5c;
   display:grid;
   grid-template-columns:1fr;
   gap:1rem;
   place-items: center;
   justify-content:space-between;
 }
+
+@media screen and (min-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+        background-color: #a09898;
+    }
+ }
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card {
+  padding: 1.25rem;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        grid-template-columns: 1fr;
+        background-color: #d4c3c3;
+    }
+ }
 
 .agrave-pro-uniquifier {
   font-family: "Agrave Pro", cursive;
@@ -26,7 +49,7 @@ header, nav, footer {
   border: 5px double #747272;
   background-color: #ffffff;
   color:#3b3b3b;
-  font-size:1.2em;
+  font-size:16px;  
   font-family: "Agrave Pro", cursive;
   font-optical-sizing: auto;
   font-weight: normal;
@@ -115,7 +138,7 @@ p{
 }
 
 li{
-  margin: .2rem;
+  margin: 1rem;
   padding: .5rem;
   color: #522436;
 }
